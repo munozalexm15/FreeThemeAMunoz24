@@ -15,4 +15,17 @@ class FREETHEME_AMUNOZ24_API ACharacter_PaperZDC : public APaperZDCharacter
 {
 	GENERATED_BODY()
 
+public:
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool c_isShooting = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool c_isJumping = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPaperZDAnimBP* stateMachine;
+
+private:
+	void SmashAttack();
 };
