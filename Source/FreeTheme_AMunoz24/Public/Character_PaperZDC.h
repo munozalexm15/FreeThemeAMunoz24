@@ -21,6 +21,9 @@ public:
 	bool c_isShooting = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool c_isCharging = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool c_isJumping = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
