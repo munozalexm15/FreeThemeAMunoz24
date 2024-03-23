@@ -10,6 +10,13 @@
 class UInputMappingContext;
 class UInputConfigData;
 
+UENUM(BlueprintType)
+enum Field_Positions
+{
+	LEFT,
+	RIGHT
+};
+
 UCLASS()
 class FREETHEME_AMUNOZ24_API ACharacter_PaperZDC : public APaperZDCharacter
 {
@@ -25,6 +32,12 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool c_isJumping = false;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	TEnumAsByte<Field_Positions> Position;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool c_CanMove = false;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UPaperZDAnimBP* stateMachine;
