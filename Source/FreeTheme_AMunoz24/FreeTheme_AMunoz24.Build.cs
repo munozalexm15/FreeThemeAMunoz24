@@ -8,7 +8,7 @@ public class FreeTheme_AMunoz24 : ModuleRules
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "PaperZD", "Paper2D", "EnhancedInput", "AIModule", "PaperZDEditor", "NavigationSystem" });
+		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "PaperZD", "Paper2D", "EnhancedInput", "AIModule", "PaperZDEditor", "NavigationSystem", "RawInput", "InputDevice", "ApplicationCore" });
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 
