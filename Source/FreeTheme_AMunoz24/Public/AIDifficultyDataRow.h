@@ -21,6 +21,6 @@ struct FAIDifficultyDataRow : public FTableRowBase
 	FString DifficultyName;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TSubclassOf<UBehaviorTree> DifficultyBTAsset {nullptr};
+	TSubclassOf<UBehaviorTree> DifficultyBTAsset;
 };
 
