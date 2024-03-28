@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "InputAction.h"
 #include "InputActionValue.h"
 #include "PaperZDCharacter.h"
 #include "Character_PaperZDC.generated.h"
@@ -41,6 +42,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UPaperZDAnimBP* stateMachine;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UInputAction* Last_IA;
 
 private:
 	void SmashAttack();
