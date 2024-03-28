@@ -6,21 +6,21 @@
 #include "PaperZDCharacter.h"
 #include "Engine/DataTable.h"
 #include "BehaviorTree/BehaviorTree.h"
-#include "AIDifficultyDataRow.generated.h"
+#include "GameModesDataRow.generated.h"
 
 
 /**
  * Row con las propiedades de cada personaje: Sprites, Habilidades (si da tiempo), fuerza de los tiros, imagen, etc.
  */
 USTRUCT()
-struct FAIDifficultyDataRow : public FTableRowBase
+struct FGameModesDataRow : public FTableRowBase
 {
 	GENERATED_BODY()
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	FString DifficultyName;
+	FString GameModeName;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
-	TSubclassOf<UBehaviorTree> DifficultyBTAsset;
+	FString GameModePath;
 };
 
