@@ -33,13 +33,16 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool c_isJumping = false;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	bool c_IsHit = false;
 	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	TEnumAsByte<Field_Positions> Position;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool c_CanMove = false;
-
+	
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	UPaperZDAnimBP* stateMachine;
 
