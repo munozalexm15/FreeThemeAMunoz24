@@ -32,3 +32,15 @@
 - Y button -> Drive Shot
 - Y button + Left gamepad Thumbstick Y Axis -> Drive shot up / down direction
 - B button -> Dash
+
+#MULTIPLAYER (Listen-Server)
+
+##Cosas a cambiar
+
+###Server
+- Movimiento pluma -> Multicast RPC para los clientes (reliable)
+- Golpear pluma con raqueta (Funciona a base de aplicar daño) -> RPC
+- Spawn de los jugadores -> Server side Replication
+
+###?
+- Movimiento jugadores -> Replication
