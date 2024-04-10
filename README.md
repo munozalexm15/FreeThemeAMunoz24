@@ -37,10 +37,10 @@
 
 ## Cosas a cambiar
 
-### Server
+### AGameStateBase
 - Movimiento pluma -> Multicast RPC para los clientes (reliable)
 - Golpear pluma con raqueta (Funciona a base de aplicar daño) -> RPC
 - Spawn de los jugadores -> Server side Replication
 
-### ?
+### APlayerState
 - Movimiento jugadores -> Replication
