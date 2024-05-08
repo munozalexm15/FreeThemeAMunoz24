@@ -44,6 +44,8 @@
 - Spawn de los jugadores -> Server side Replication
 - Anotar puntos / Actualizar puntuación -> Replication server
 
+Hud no funca porque hay que hacer que el hud tenga un rpc que replique a todos los clientes, no modificar el hud directamente (con los valores finales = set text en Player_Hud)
+
 ### APlayerState
 - Movimiento, estados, etc. -> Replication
     - (Client) Validar velocidad de los jugadores es igual o menor a la máxima
