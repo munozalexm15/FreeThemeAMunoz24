@@ -38,13 +38,8 @@
 ## Cosas a cambiar
 
 ### AGameStateBase
-- Movimiento pluma -> Multicast RPC server (reliable)
-- Golpear pluma con raqueta -> RPC server (reliable)
-    - Si esta colisionando con alguna capsula de un jugador, setearle el owner a este para poder aplicarle el daño // Hacer que la pluma spawnee en el server para no gestionar owner
-    
-    - Jugador golpea pluma (cliente) -> Aplicar daño (server)
-    
-    - Validar daño para que no pueda superar el valor más alto de ese tipo
+
+    Validar daño a la pluma para que no pueda superar el valor más alto de ese tipo
     
 - Spawn de los jugadores -> Server side Replication
 - Anotar puntos / Actualizar puntuación -> Replication server
