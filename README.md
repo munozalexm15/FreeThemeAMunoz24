@@ -44,7 +44,9 @@
 - Spawn de los jugadores -> Server side Replication
 - Anotar puntos / Actualizar puntuación -> Replication server
 
-Hud no funca porque hay que hacer que el hud tenga un rpc que replique a todos los clientes, no modificar el hud directamente (con los valores finales = set text en Player_Hud)
+Modificar estructura hud: 
+1. Ir a el game state y añadir alli en las dos onrep notify (left points y right points) que se llame al RCP que hay en el character para actualizar los puntos.
+2. Dividir el metodo de actualizar los puntos del hud en funciones diferentes (en player_hud updateClientsHud)
 
 ### APlayerState
 - Movimiento, estados, etc. -> Replication
