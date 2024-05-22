@@ -37,7 +37,7 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
 	bool c_IsHit = false;
 	
-	UPROPERTY(EditAnywhere, BlueprintReadWrite)
+	UPROPERTY(Replicated, EditAnywhere, BlueprintReadWrite)
 	TEnumAsByte<Field_Positions> Position;
 
 	UPROPERTY(EditAnywhere, BlueprintReadWrite)
@@ -51,4 +51,7 @@ public:
 
 private:
 	void SmashAttack();
+
+public:
+	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>&) const override;
 };
