@@ -37,18 +37,6 @@
 
 ## Cosas a cambiar
 
-### AGameStateBase
-
-    Validar daño a la pluma para que no pueda superar el valor más alto de ese tipo
-    
-- Spawn de los jugadores -> Server side Replication
-- Anotar puntos / Actualizar puntuación -> Replication server
-
-Modificar estructura hud: 
-1. Ir a el game state y añadir alli en las dos onrep notify (left points y right points) que se llame al RCP que hay en el character para actualizar los puntos.
-2. Dividir el metodo de actualizar los puntos del hud en funciones diferentes (en player_hud updateClientsHud)
-
-### APlayerState
-- Movimiento, estados, etc. -> Replication
-    - (Client) Validar velocidad de los jugadores es igual o menor a la máxima
-    - Validar que tengan que esperar X tiempo para volver a golpear
+- Sincronizar pantallas de ganar puntos para cada bando
+- Que la pluma no se quede pillada
+- Que la pluma si sale del campo no se vaya a narnia
