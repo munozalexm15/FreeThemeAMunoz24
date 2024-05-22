@@ -38,5 +38,5 @@
 ## Cosas a cambiar
 
 - Sincronizar pantallas de ganar puntos para cada bando
-- Que la pluma no se quede pillada
+- Que la pluma no se quede pillada -> check overlapping actors (hay que hacerlo que mire en cliente o broadcast para que compruebe si está colisionando)
 - Que la pluma si sale del campo no se vaya a narnia
