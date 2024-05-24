@@ -38,5 +38,5 @@
 ## Cosas a cambiar
 
 - Sincronizar pantallas de ganar puntos para cada bando
-- Que la pluma no se quede pillada -> check overlapping actors (hay que hacerlo que mire en cliente o broadcast para que compruebe si está colisionando)
+- Que los de la derecha al golpear sea hacia la izquierda (falta hacer que se replique el position del character? para que se aplique al daño a la pluma)
 - Que la pluma si sale del campo no se vaya a narnia
