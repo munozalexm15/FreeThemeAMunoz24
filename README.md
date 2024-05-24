@@ -35,7 +35,10 @@
 
 # MULTIPLAYER (Listen-Server)
 
-## Cosas a cambiar
+## Cosas a cambiar // OPTATIVO
 
-- Que los de la derecha al golpear sea hacia la izquierda (falta hacer que se replique el position del character? para que se aplique al daño a la pluma)
 - Que la pluma si sale del campo no se vaya a narnia
+- Pulir codigo (tema golpear pluma con el tema de RPCS)
+- Corregir tema de que los jugadores no se puedan mover despues de sacar
+- Setear que jugador saca por cada punto
+- 
